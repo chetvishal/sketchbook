@@ -18,7 +18,7 @@ const Menu = () => {
             <div className={cx(styles.iconWrapper, {[styles.active]: activeMenuItem === MENU_ITEMS.PENCIL} )} onClick={() => handleMenuClick(MENU_ITEMS.PENCIL)}>
                 <FontAwesomeIcon icon={faPencil} className={styles.icon} />
             </div>
-            <div className={styles.iconWrapper} onClick={() => handleMenuClick(MENU_ITEMS.ERASER)}>
+            <div className={cx(styles.iconWrapper, {[styles.active]: activeMenuItem === MENU_ITEMS.ERASER})} onClick={() => handleMenuClick(MENU_ITEMS.ERASER)}>
                 <FontAwesomeIcon icon={faEraser}  className={styles.icon}/>
             </div>
             <div className={styles.iconWrapper}>
